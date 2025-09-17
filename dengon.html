@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <script>
+function 入力() {
+  if (入力内容.value === "") {
+    alert("内容がないようです");
+  } 
+  else {
+    伝言エリア.innerText += "\n" + 入力内容.value;
+  }
+}
+</script>
+  </head>
+  <body>
+    <h1>伝言板?</h1>
+    <p id="伝言エリア">コードを書くことは難しい?</p>
+    <input id="入力内容"><button onclick="入力()">送信</button>
+  </body>
+</html>
